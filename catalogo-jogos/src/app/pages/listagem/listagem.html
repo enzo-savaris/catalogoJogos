@@ -1,0 +1,10 @@
+<h2>Lista de Jogos</h2>
+
+<div *ngFor="let jogo of jogos">
+  <app-card-jogo
+    [jogo]="jogo"
+    (favoritar)="adicionarFavorito($event)"
+    (remover)="removerJogo($event)">
+  </app-card-jogo>
+
+</div>

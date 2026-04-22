@@ -1,0 +1,9 @@
+<div class="card">
+  <h3>{{ jogo.nome }}</h3>
+  <p>Plataforma: {{ jogo.plataforma }}</p>
+  <p>Gênero: {{ jogo.genero }}</p>
+  <p>Faixa Etária: {{ jogo.idade }}</p>
+
+  <button (click)="onFavoritar()">Favoritar</button>
+  <button (click)="onRemover()">Remover</button>
+</div>

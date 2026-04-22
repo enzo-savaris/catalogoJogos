@@ -1,0 +1,12 @@
+<h2>Favoritos</h2>
+
+<p *ngIf="favoritos.length === 0">Nenhum item selecionado</p>
+
+<div *ngFor="let jogo of favoritos">
+  <app-card-jogo
+    [jogo]="jogo"
+    (remover)="remover($event)">
+  </app-card-jogo>
+</div>
+
+<p>Total de itens: {{ favoritos.length }}</p>
